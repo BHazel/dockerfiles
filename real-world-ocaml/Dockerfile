@@ -1,5 +1,5 @@
 FROM ocaml/opam:debian-stable_ocaml-4.01.0
-MAINTAINER Benedict W. Hazel <bwhazel@gmail.com>
+LABEL maintainer="Benedict W. Hazel <bwhazel@gmail.com>"
 
 RUN opam install -y core utop \
     && eval `opam config env` \
